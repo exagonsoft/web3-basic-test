@@ -4,16 +4,24 @@ import Logo from "../../assets/logo.png";
 import { navMenuLinks } from "../../constants/constants";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import {configCors} from "../../mock/corsConfiguration.cjs";
 
 const NavBar = () => {
   const [isWideScreen, setIsWideScreen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [corsConfiguration, setCorsConfiguration] = useState('');
 
   const toggleMenu = () => {
     setShowMenu((prev) =>!prev);
   };
 
+  const handleCors = async () => {
+    const config = await configCors();
+    setCorsConfiguration((prevState) => config);
+  }
+
   useEffect(() => {
+    handleCors();
     const handleResize = () => {
       setIsWideScreen(window.innerWidth > 650);
     };
