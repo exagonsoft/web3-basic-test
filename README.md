@@ -1,17 +1,17 @@
-# Vite React Express Boilerplate
+# Web3 - Blockchain Test
 
-> Quickly bootstrap a new project with Vite React Express Boilerplate.
+🔍 Welcome to the Web3 - Blockchain Test! This project evaluates your ability to integrate MetaMask (or other Web3 wallets) into an application while ensuring user control over wallet connectivity.
 
-This boilerplate is a fork of [lmachens/vite-boilerplate](https://github.com/lmachens/vite-boilerplate), but replaces TypeScript with JavaScript and removes Storybook.
+## Objective
 
-This boilerplate contains all the tools you need to build a modern web app with JavaScript, React, Vite, and Express.  
-You can use it to quickly bootstrap your project.
-
-ESLint, stylelint, prettier, husky and lintstaged are configured to give you a solid development experience.
+The goal is to implement a login page with the following requirements:
+- **Automatic Connection:** Initially, the application automatically checks if a Web3 wallet (like MetaMask) is installed and try to connect.
+- **Connect Wallet Button:** Instead of automatic connection, implement a "Connect Wallet" button that users must click to connect their wallet.
+- **Disconnect Wallet Button:** Provide a way to disconnect the wallet if it's connected.
 
 ## Installing / Developing
 
-First, [create a repository from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template).
+First, [create a repository from this template](https://github.com/exagonsoft/web3-basic-test).
 
 Now you are ready to go:
 

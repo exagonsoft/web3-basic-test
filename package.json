@@ -2,7 +2,12 @@
   "name": "web3-basic-test",
   "version": "0.0.0",
   "repository": {
-    "url": ""
+    "url": "https://github.com/exagonsoft/web3-basic-test"
+  },
+  "author": {
+    "name": "Alvaro R Martin Peraza",
+    "email": "exagonsoft@exagon-soft.com",
+    "url": "https://exagon-soft.com"
   },
   "scripts": {
     "clean": "rimraf dist",
