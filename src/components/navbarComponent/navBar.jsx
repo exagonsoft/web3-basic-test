@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./navbarstyles.css";
 import Logo from "../../assets/logo.png";
 import { navMenuLinks } from "../../constants/constants";
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {configCors} from "../../mock/corsConfiguration.cjs";
 
@@ -10,6 +10,7 @@ const NavBar = () => {
   const [isWideScreen, setIsWideScreen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [corsConfiguration, setCorsConfiguration] = useState('');
+  const location = useLocation();
 
   const toggleMenu = () => {
     setShowMenu((prev) =>!prev);
@@ -32,7 +33,7 @@ const NavBar = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [location]);
   return (
     <nav className="nav-bar">
       <Link to="./" className="logo-link">
