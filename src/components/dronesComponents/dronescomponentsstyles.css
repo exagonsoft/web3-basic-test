@@ -1,0 +1,391 @@
+.drone-list-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--containers-border-radius);
+    padding: 1rem;
+    background: rgba(0, 0, 0, 90%);
+    box-shadow: var(--shadows);
+    gap: 1rem;
+}
+
+.drone-list-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-gray-100);
+    padding: .5rem 0;
+}
+
+.drone-list-card-header>span {
+    background: var(--color-gray-400);
+    padding: .2rem .6rem;
+    border-radius: var(--components-border-radius);
+}
+
+
+
+.drone-list-card-header>svg:hover {
+    text-shadow: var(--shadows);
+    color: var(--color-gray-400);
+    ;
+}
+
+.drone-list-card-header-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.drone-list-card-body {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.drone-list-card-body>img {
+    width: 6rem;
+    border-radius: var(--components-border-radius);
+}
+
+.drone-list-card-body-info {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.drone-list-card-body-info-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color-gray-100);
+    gap: .5rem;
+}
+
+.drone-list-card-body-info-row>span {
+    background: var(--color-gray-400);
+    padding: .2rem .6rem;
+    border-radius: var(--components-border-radius);
+}
+
+.drone-list-card-baggage {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.drone-list-card-baggage-details-menu {
+    display: flex;
+    align-items: center;
+}
+
+.drone-list-card-baggage-details-menu>hr {
+    width: 100%;
+    height: 2px;
+    background: var(--color-gradient-save);
+}
+
+.drone-list-card-baggage-details-menu>svg {
+    color: var(--color-gray-100);
+    cursor: pointer;
+    font-size: large;
+}
+
+.drone-list-card-baggage-list {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px inset silver;
+    padding: 0.3rem;
+    border-radius: 8px;
+}
+
+.drone-list-card-baggage-list::-webkit-scrollbar {
+    width: 0;
+    /* Set a width for the invisible scrollbar */
+}
+
+.drone-list-card-baggage-list::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Hide the thumb */
+}
+
+.drone-list-card-baggage-list::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Hide the track */
+}
+
+.expanded-drone-list-card {
+    grid-row: span 2;
+}
+
+.action-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.action-menu>svg {
+    cursor: pointer;
+    border: solid 1px var(--color-gray-100);
+    border-radius: var(--components-border-radius);
+    padding: .2rem;
+    transition: var(--transitions);
+}
+
+.action-menu-body {
+    position: absolute;
+    margin-bottom: -80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .5rem;
+    background: var(--color-gray-100);
+    box-shadow: var(--shadows);
+    border-radius: var(--containers-border-radius);
+    transition: var(--transitions);
+    color: black;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.action-menu-body>span {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    padding: .1rem 1rem;
+    border-radius: var(--components-border-radius);
+    background: var(--color-primary);
+    cursor: pointer;
+    transition: var(--transitions);
+}
+
+.action-menu-body>span:hover {
+    box-shadow: var(--shadows);
+    text-shadow: var(--shadows);
+}
+
+/******************Drone Modal Form********************/
+.drone-modal-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation: fade-in ease-in-out .3s;
+}
+
+.glass-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.drone-modal-form {
+    position: absolute;
+    top: 10%;
+    z-index: 120;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 80%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadows);
+}
+
+.drone-modal-form-header {
+    padding: .5rem 2rem;
+    font-size: .8rem;
+}
+
+.drone-modal-form-header>h1 {
+    padding: 0;
+    display: contents;
+}
+
+.drone-modal-form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 640px;
+    padding: 1rem;
+}
+
+.drone-modal-form-body>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-footer>button:nth-child(1) {
+    background: var(--color-gradient-save);
+}
+
+.form-footer>button:nth-child(2) {
+    background: var(--color-gradient-danger);
+}
+
+/******************Drone Modal Loading**************************/
+.drone-modal-load-form {
+    position: absolute;
+    top: 5%;
+    z-index: 120;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 80%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadows);
+    width: 60%;
+}
+
+.drone-modal-form-load-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.drag-drop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.drone-storage-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.drone-storage-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 15px;
+    margin-top: -15px;
+}
+
+.drone-info-cell{
+    display: flex;
+    position: absolute;
+    padding: 0.2rem 0.5rem;
+    background: var(--color-primary);
+    border-radius: 8px;
+}
+
+.loading-info-cell{
+    display: flex;
+    position: absolute;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    right: 0;
+}
+
+.drone-storage-fine{
+    background: var(--color-gradient-save);
+}
+
+.drone-storage-overload{
+    background: var(--color-gradient-danger);
+}
+
+.drag-drop-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    justify-items: center;
+    background-color: rgb(180 193 211 / 30%);
+    border-radius: 8px;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 450px;
+    border: 1px inset silver;
+    box-shadow: inset -2px 7px 10px 5px rgb(31 31 35 / 63%);
+}
+
+.drag-drop-wrapper::-webkit-scrollbar {
+    width: 0;
+    /* Set a width for the invisible scrollbar */
+}
+
+.drag-drop-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Hide the thumb */
+}
+
+.drag-drop-wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Hide the track */
+}
+
+
+/******************************SHARED****************************/
+@media screen and (max-width: 668px) {
+    .drone-modal-load-form {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .drone-modal-form-load-body {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .drone-modal-form{
+        width: 80%;
+        padding: 1rem;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
