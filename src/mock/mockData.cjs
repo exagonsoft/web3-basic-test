@@ -1,49 +1,49 @@
-export const medicaments = [
+const medicaments = [
   {
     name: "Baize_90",
     weight: 20,
     code: "BYNX_90_YHREFTV",
-    image: "localhost:5173/uploads/Baize_90.png",
+    image: "localhost:4173/uploads/Baize_90.png",
   },
   {
     name: "Gadget_42",
     weight: 15,
     code: "GNXT_42_ZFYTUPL",
-    image: "localhost:5173/uploads/Gadget_42.png",
+    image: "localhost:4173/uploads/Gadget_42.png",
   },
   {
     name: "Widget_75",
     weight: 18,
     code: "WDT_75_PQORMNK",
-    image: "localhost:5173/uploads/Widget_75.png",
+    image: "localhost:4173/uploads/Widget_75.png",
   },
   {
     name: "Device_28",
     weight: 12,
     code: "DVC_28_KLMNOPQ",
-    image: "localhost:5173/uploads/Device_28.png",
+    image: "localhost:4173/uploads/Device_28.png",
   },
   {
     name: "Tool_51",
     weight: 14,
     code: "TL_51_ABCDEFG",
-    image: "localhost:5173/uploads/Tool_51.png",
+    image: "localhost:4173/uploads/Tool_51.png",
   },
   {
     name: "Apparatus_63",
     weight: 22,
     code: "APP_63_HIJKLMNOP",
-    image: "localhost:5173/uploads/Apparatus_63.png",
+    image: "localhost:4173/uploads/Apparatus_63.png",
   },
   {
     name: "Contraption_88",
     weight: 19,
     code: "CTN_88_QRSTUVW",
-    image: "localhost:5173/uploads/Contraption_88.png",
+    image: "localhost:4173/uploads/Contraption_88.png",
   },
 ];
 
-export const drones = [
+const drones = [
   {
     serial_number: "rfwe3245",
     model: "Lightweight",
@@ -55,19 +55,19 @@ export const drones = [
         name: "Baize_90",
         weight: 20,
         code: "BYNX_90_YHREFTV",
-        image: "localhost:5173/uploads/Baize_90.png",
+        image: "localhost:4173/uploads/Baize_90.png",
       },
       {
         name: "Gadget_42",
         weight: 15,
         code: "GNXT_42_ZFYTUPL",
-        image: "localhost:5173/uploads/Gadget_42.png",
+        image: "localhost:4173/uploads/Gadget_42.png",
       },
       {
         name: "Widget_75",
         weight: 18,
         code: "WDT_75_PQORMNK",
-        image: "localhost:5173/uploads/Widget_75.png",
+        image: "localhost:4173/uploads/Widget_75.png",
       },
     ],
   },
@@ -82,13 +82,13 @@ export const drones = [
         name: "Tool_51",
         weight: 14,
         code: "TL_51_ABCDEFG",
-        image: "localhost:5173/uploads/Tool_51.png",
+        image: "localhost:4173/uploads/Tool_51.png",
       },
       {
         name: "Apparatus_63",
         weight: 22,
         code: "APP_63_HIJKLMNOP",
-        image: "localhost:5173/uploads/Apparatus_63.png",
+        image: "localhost:4173/uploads/Apparatus_63.png",
       },
     ],
   },
@@ -103,7 +103,7 @@ export const drones = [
         name: "Baize_90",
         weight: 20,
         code: "BYNX_90_YHREFTV",
-        image: "localhost:5173/uploads/Baize_90.png",
+        image: "localhost:4173/uploads/Baize_90.png",
       },
     ],
   },
@@ -118,13 +118,13 @@ export const drones = [
         name: "Gadget_42",
         weight: 15,
         code: "GNXT_42_ZFYTUPL",
-        image: "localhost:5173/uploads/Gadget_42.png",
+        image: "localhost:4173/uploads/Gadget_42.png",
       },
       {
         name: "Widget_75",
         weight: 18,
         code: "WDT_75_PQORMNK",
-        image: "localhost:5173/uploads/Widget_75.png",
+        image: "localhost:4173/uploads/Widget_75.png",
       },
     ],
   },
@@ -139,13 +139,13 @@ export const drones = [
         name: "Baize_90",
         weight: 20,
         code: "BYNX_90_YHREFTV",
-        image: "localhost:5173/uploads/Baize_90.png",
+        image: "localhost:4173/uploads/Baize_90.png",
       },
       {
         name: "Tool_51",
         weight: 14,
         code: "TL_51_ABCDEFG",
-        image: "localhost:5173/uploads/Tool_51.png",
+        image: "localhost:4173/uploads/Tool_51.png",
       },
     ],
   },
@@ -160,13 +160,13 @@ export const drones = [
         name: "Widget_75",
         weight: 18,
         code: "WDT_75_PQORMNK",
-        image: "localhost:5173/uploads/Widget_75.png",
+        image: "localhost:4173/uploads/Widget_75.png",
       },
       {
         name: "Apparatus_63",
         weight: 22,
         code: "APP_63_HIJKLMNOP",
-        image: "localhost:5173/uploads/Apparatus_63.png",
+        image: "localhost:4173/uploads/Apparatus_63.png",
       },
     ],
   },
@@ -181,7 +181,7 @@ export const drones = [
         name: "Gadget_42",
         weight: 15,
         code: "GNXT_42_ZFYTUPL",
-        image: "localhost:5173/uploads/Gadget_42.png",
+        image: "localhost:4173/uploads/Gadget_42.png",
       },
     ],
   },
@@ -196,13 +196,13 @@ export const drones = [
         name: "Widget_75",
         weight: 18,
         code: "WDT_75_PQORMNK",
-        image: "localhost:5173/uploads/Widget_75.png",
+        image: "localhost:4173/uploads/Widget_75.png",
       },
       {
         name: "Tool_51",
         weight: 14,
         code: "TL_51_ABCDEFG",
-        image: "localhost:5173/uploads/Tool_51.png",
+        image: "localhost:4173/uploads/Tool_51.png",
       },
     ],
   },
@@ -217,13 +217,13 @@ export const drones = [
         name: "Baize_90",
         weight: 20,
         code: "BYNX_90_YHREFTV",
-        image: "localhost:5173/uploads/Baize_90.png",
+        image: "localhost:4173/uploads/Baize_90.png",
       },
       {
         name: "Gadget_42",
         weight: 15,
         code: "GNXT_42_ZFYTUPL",
-        image: "localhost:5173/uploads/Gadget_42.png",
+        image: "localhost:4173/uploads/Gadget_42.png",
       },
     ],
   },
@@ -238,25 +238,25 @@ export const drones = [
         "name": "Widget_75",
         "weight": 18,
         "code": "WDT_75_PQORMNK",
-        "image": "localhost:5173/uploads/Widget_75.png"
+        "image": "localhost:4173/uploads/Widget_75.png"
       },
       {
         "name": "Baize_90",
         "weight": 20,
         "code": "BYNX_90_YHREFTV",
-        "image": "localhost:5173/uploads/Baize_90.png"
+        "image": "localhost:4173/uploads/Baize_90.png"
       },
       {
         "name": "Tool_51",
         "weight": 14,
         "code": "TL_51_ABCDEFG",
-        "image": "localhost:5173/uploads/Tool_51.png"
+        "image": "localhost:4173/uploads/Tool_51.png"
       }
     ]
   }
 ];
 
-export const users = [
+const users = [
   {
     id: 1,
     username: 'root',
@@ -273,3 +273,5 @@ export const users = [
     password: 'qwerty'
   },
 ]
+
+module.exports  = {medicaments, drones, users}

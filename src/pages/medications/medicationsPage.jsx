@@ -15,6 +15,7 @@ const MedicationsPage = () => {
   const loadMedicationsList = async () => {
     try {
       let _res = await axios.get("api/medications");
+      console.log(_res.data);
       let _listedMedications = _res.data;
       setMedicationsList(_listedMedications);
     } catch (error) {}

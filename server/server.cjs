@@ -1,12 +1,16 @@
 const path = require('path');
 const express = require('express');
+const cors = require('cors'); // Import the cors package
 const router = require('./routes/router.cjs');
 
 const { PORT = 3001 } = process.env;
 
 const app = express();
 
-// Middleware that parses json and looks at requests where the Content-Type header matches the type option.
+// Use CORS middleware to allow requests from any origin
+app.use(cors());
+
+// Middleware that parses JSON and looks at requests where the Content-Type header matches the type option.
 app.use(express.json());
 
 // Serve API requests from the router

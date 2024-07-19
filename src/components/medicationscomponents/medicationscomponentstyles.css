@@ -266,6 +266,10 @@
         width: 80%;
         padding: 1rem;
     }
+
+    .medication-list-card {
+        max-width: 87%;
+    }
 }
 
 @keyframes fade-in {

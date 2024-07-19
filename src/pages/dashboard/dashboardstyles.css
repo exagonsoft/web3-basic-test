@@ -12,6 +12,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .body{
@@ -88,7 +89,7 @@
 @media screen and (max-width: 668px) {
     .drones-state-info{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
